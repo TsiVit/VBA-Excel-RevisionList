@@ -1,4 +1,3 @@
-Attribute VB_Name = "RL"
 Option Explicit
 Dim SPTDL As Range          'Start Point To Do List
 Dim SPRL As Range           'Start Point Revision List
@@ -32,7 +31,6 @@ Sub ini_Rev_List()
 End Sub
 
 Sub Rev_List()
-Attribute Rev_List.VB_ProcData.VB_Invoke_Func = "L\n14"
     Dim StopMark As Boolean
     Dim DoneTsk As Range
     Dim NewRecRL As Range
@@ -106,7 +104,6 @@ Sub New_Req(ByVal RngFrom As Range, ByVal RngTo As Range)
 End Sub
 
 Sub TDL()
-Attribute TDL.VB_ProcData.VB_Invoke_Func = "T\n14"
     Dim NewReqTDL As Range
     
     If SheetNameCheck() = False Then Exit Sub
@@ -150,11 +147,3 @@ Function SheetNameCheck() As Boolean
     End If
     
 End Function
-
-
-Sub test()
-    Call ini_Rev_List
-    Debug.Print COff.Due
-End Sub
-
-
